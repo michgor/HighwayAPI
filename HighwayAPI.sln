@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighwayAPI", "HighwayAPI\HighwayAPI.csproj", "{ACA4BC93-591F-402C-97DE-9DD2989EDD25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.DAL", "Highway.DAL\Highway.DAL.csproj", "{31F80991-0126-49A1-B6F2-F0A887B27916}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.BL", "Highway.BL\Highway.BL.csproj", "{1E22C663-46D4-4927-9A38-3E8AE6D85051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA4BC93-591F-402C-97DE-9DD2989EDD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA4BC93-591F-402C-97DE-9DD2989EDD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA4BC93-591F-402C-97DE-9DD2989EDD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA4BC93-591F-402C-97DE-9DD2989EDD25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F80991-0126-49A1-B6F2-F0A887B27916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F80991-0126-49A1-B6F2-F0A887B27916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F80991-0126-49A1-B6F2-F0A887B27916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F80991-0126-49A1-B6F2-F0A887B27916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E22C663-46D4-4927-9A38-3E8AE6D85051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E22C663-46D4-4927-9A38-3E8AE6D85051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E22C663-46D4-4927-9A38-3E8AE6D85051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E22C663-46D4-4927-9A38-3E8AE6D85051}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0607DFE7-C62D-4C53-8CC4-383BF87F4F0C}
+	EndGlobalSection
+EndGlobal
