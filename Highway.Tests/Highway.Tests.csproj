@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Highway.DAL\Highway.csproj" />
+    <ProjectReference Include="..\Highway\Highway.csproj" />
   </ItemGroup>
 
 </Project>

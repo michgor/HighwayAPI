@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.API", "HighwayAPI\Highway.API.csproj", "{ACA4BC93-591F-402C-97DE-9DD2989EDD25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.API", "Highway.API\Highway.API.csproj", "{ACA4BC93-591F-402C-97DE-9DD2989EDD25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway", "Highway.DAL\Highway.csproj", "{31F80991-0126-49A1-B6F2-F0A887B27916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway", "Highway\Highway.csproj", "{31F80991-0126-49A1-B6F2-F0A887B27916}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{912ADAA4-478E-49BC-91DB-C599F40FC984}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.Tests", "Highway.DAL.Tests\Highway.Tests.csproj", "{BBB29594-263A-4705-81D6-4E068664CD6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Highway.Tests", "Highway.Tests\Highway.Tests.csproj", "{BBB29594-263A-4705-81D6-4E068664CD6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
