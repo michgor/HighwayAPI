@@ -1,23 +1,24 @@
 ﻿using Highway.DAL.DomainModels.TollStations;
+using Highway.DomainModels.TollStations;
 
 namespace Highway.DAL.DomainModels.Routes
 {
     public sealed class Route : Entity
-    {     
-        public Route(Gate from, Gate to)
-            : base()
+    {            
+        public Gate Entry { get; }
+
+        public Gate Exit { get; }
+
+        public Route(Gate entry)
+            : this(entry, null)
         {
-            this.From = from;
-            this.To = to;
         }
 
-        public Gate From { get; }
-
-        public Gate To { get; }
-
-        public Route(Gate from)
-            : this(from, null)
+        public Route(Gate entry, Gate exit)
+            : base()
         {
+            this.Entry = entry;
+            this.Exit = exit;
         }
     }
 }

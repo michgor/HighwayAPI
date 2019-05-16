@@ -2,12 +2,12 @@
 {
     public sealed class Vehicle : Entity
     {
-        public Vehicle(string type)
+        public Vehicle(VehicleCategory vehicleCategory)
             : base()
         {
-            this.Type = type;
+            this.VehicleCategory = vehicleCategory;
         }
 
-        public string Type { get; }
+        public VehicleCategory VehicleCategory { get; }
     }
 }

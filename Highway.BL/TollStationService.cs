@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Highway.BL
 {
-    public class RouteAccessService
+    public class TollStationService
     {
 
     }

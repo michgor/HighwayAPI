@@ -1,12 +1,16 @@
-﻿using Autofac;
-using HighwayAPI.DependenciesRegistries;
+﻿using System;
+using System.IO;
+using System.Reflection;
+using Autofac;
+using Highway.API.DependenciesRegistries;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
-namespace HighwayAPI
+namespace Highway.API
 {
     public class Startup
     {
@@ -21,11 +25,18 @@ namespace HighwayAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", SwaggerInfo.GetDocumentationInfo());
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });           
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterModule(new ServicesRegistryModule());
+            builder.RegisterModule(new RegistryModule());
         }
 
 
@@ -43,6 +54,11 @@ namespace HighwayAPI
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Highway API V1");
+            });
         }
     }
 }
